@@ -12,7 +12,7 @@
     tools:context="com.londonappbrewery.iampoor.MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_i_am_poor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -21,15 +21,31 @@
         android:fontFamily="casual"
         android:text="@string/title"
         android:textColor="#FFFFFF"
-        android:textSize="45sp" />
+        android:textSize="45sp"
+        android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/image_coal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/text_i_am_poor"
+        android:layout_above="@id/text_not_for_long"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="false"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
         android:contentDescription="@string/title"
         android:src="@drawable/coal" />
+
+    <TextView
+        android:id="@+id/text_not_for_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:text="@string/motivation"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>
